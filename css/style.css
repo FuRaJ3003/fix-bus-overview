@@ -1,0 +1,463 @@
+/* Kamil Kura 
+Green - #39b54a 
+Black - 231f20*/
+
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container span{
+    color: #39b54a;
+}
+
+.container p{
+    font-size: 20px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: #39b54a;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+
+.dark {
+    padding: 15px;
+    background: #231f20;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.dark dr-txt{
+    text-align: center;
+}
+
+.dark img{
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dark li{    
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+
+.img-box1 {
+    padding: 15px;
+    background: #231f20;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img-box1 img{
+    width: 100%;
+    max-height: 320px;
+}
+
+li img{
+    position: static;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 44%;
+}
+
+.article-txt2{
+    text-align: justify;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.article-txt2 h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.article-txt2 ln{
+    color: #39b54a;
+}
+
+/* Lang */
+.button_lang {
+    height: 38px;
+    background: #231f20;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.button_lang:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    border-color: #39b54a;
+    cursor: pointer;
+}
+
+.lang {
+    float: left;
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+.lang img{
+    margin-top: 3px;
+}
+
+/* Header */
+header{
+    background:#231f20;
+    color:#ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #39b54a 3px solid;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+            /* lista nieuporzadkowana */ 
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+    /* top right bottom left */
+}
+
+header #branding{   
+    float: left;   
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header #branding img{
+    width: 200px;
+    position: static;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color:#39b54a;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+}
+
+/* Galery */
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img{
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 230px;
+    max-height: 200px;
+    max-width: 400px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.gallery img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Showcase */
+#showcase{
+    min-height: 400px;
+    height: 50vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../img/showcase.png');
+    text-align: center;
+    color: #ffffff;
+}
+
+@keyframes slideBg{
+    0% {
+        background-image: url('../img/showcase2.png');
+    }
+
+    50% {
+        background-image: url('../img/showcase.png');
+    }
+
+    100% {
+        background-image: url('../img/showcase2.png');
+    }
+}
+
+#showcase h1{
+    margin-top: 130px;
+    font-size: 95px;
+    margin-bottom: 0px;
+    text-shadow: 2px 1px #231f20;
+}
+
+#showcase p{
+    font-size: 35px;
+    text-shadow: 1px 2px 10px #231f20;
+    font-family: Tahoma;
+    font-style: italic;
+}
+
+#showcase span{
+    color:#39b54a
+}
+
+/* Mail Contact Field */
+#mail_contact {
+    padding: 15px;
+    color: #ffffff;
+    background: #231f20;
+}
+
+#mail_contact h1{
+    float:left;
+    font-weight: normal;
+}
+
+#mail_contact form{
+    float:right;
+    margin-top: 15px;
+}
+
+#mail_contact input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;   
+}
+
+#boxes .bog img{
+    width: 90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+aside span{
+    color: #39b54a;
+    font-weight: bold;
+}
+
+/* Main-Col */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Services Range */
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+/* Footer */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:#ffffff;
+    background-color: #39b54a;
+    text-align: center;
+}
+
+/* CONTACT CARD */
+
+.flip-container {
+  perspective: 1000;
+  margin-top: 10px;
+}
+
+.flip-container:hover .card, .flip-container.hover .card {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.front {
+  width: 320px;
+  height: 472px;
+  background-color: #39b54a;
+  margin-top: 20px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  padding: 40px 20px 10px 20px;
+  color: #ffffff;
+}
+
+.back {
+  width: 320px;
+  height: 472px;
+  background-color: #231f20;
+  margin-top: 20px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  padding: 40px 20px 10px 20px;
+  color: #ffffff;
+}
+
+.logo-up {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.logo-big {
+  font-size: 37px;
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+.logo-big2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: -15px;
+    color: #39b54a
+  }
+
+.card-content {
+  position: absolute;
+  bottom: 5px;
+}
+
+.card-content {
+  font-weight: 200;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #mail_contact h1,
+    #mail_contact form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align:center;
+        width: 100%
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #mail_contact button, .qute button{
+        width: 100%;
+        display:block;
+    }
+
+    #mail_contact form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    li img{
+        margin-left: 10%;
+    }
+
+    .flip-container, .front, .back {
+        width: 320px;
+        height: 480px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+}
+
